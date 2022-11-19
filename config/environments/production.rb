@@ -42,8 +42,8 @@ Rails.application.configure do
 
   # Mount Action Cable outside main process or domain.
   # config.action_cable.mount_path = nil
-  config.action_cable.url = "wss://ancient-basin-80711.herokuapp.com//cable"
-  config.action_cable.allowed_request_origins = [ "https://ancient-basin-80711.herokuapp.com/", /http:\/\/ancient-basin-80711.herokuapp.com.*/ ]
+  config.action_cable.url = "wss://ancient-basin-80711.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = [ "https://chatrooms-daft2.vercel.app/", /http:\/\/chatrooms-daft2.vercel.app.*/ ]
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
