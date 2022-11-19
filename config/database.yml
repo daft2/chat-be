@@ -49,7 +49,4 @@ test:
 # for a full overview on how database connection configuration can be specified.
 #
 production:
-  <<: *default
-  database: simple_chat_production
-  username: simple_chat
-  password: <%= ENV["SIMPLE_CHAT_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
