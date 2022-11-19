@@ -5,7 +5,7 @@ class MessageController < ApplicationController
         sender_id: params[:user_id], 
         content: params[:content]
       )
-      ActionCable.server.broadcast("chat_#{999}", message)
+      ActionCable.server.broadcast("chat_prod_#{999}", message)
       render json: message, status: :created
     end
   
